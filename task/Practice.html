@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Team Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        /* ======= CARD STYLE ======= */
+        .card {
+            background: rgb(213, 209, 209);
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: 0.3s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2;
+            justify-content: space-between;
+        }
+
+
+
+        .card img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 5px;
+        }
+
+        .role {
+            color: rgb(74, 17, 17);
+            margin-bottom: 15px;
+        }
+
+
+        .skills {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: center;
+            list-style: none;
+        }
+
+        .skills li {
+            background: #dba8a8;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 14px;
+            color: rgb(19, 18, 17);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Team Portfolio</h1>
+
+    <section class="team-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="../images/image1.jpg" alt="Student Image">
+            <h2>Sarah Chen</h2>
+            <p class="role">Lead Frontend Developer</p>
+
+            <ul class="skills">
+                <li>React</li>
+                <li>CSS Grid</li>
+                <li>TypeScript</li>
+                <li>UX Design</li>
+            </ul>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="../images/image44.jpg" alt="Student Image">
+            <h2>Alex Kim</h2>
+            <p class="role">Senior DevOps Engineer</p>
+
+            <ul class="skills">
+                <li>Docker</li>
+                <li>CI/CD</li>
+                <li>AWS</li>
+                <li>Kubernetes</li>
+            </ul>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="../images/image55.jpg" alt="Student Image">
+            <h2>Marcus Rodriguez</h2>
+            <p class="role">UX/UI Designer</p>
+
+            <ul class="skills">
+                <li>React</li>
+                <li>CSS Grid</li>
+                <li>TypeScript</li>
+                <li>UX Design</li>
+            </ul>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+
+            <h2>Priya Patel</h2>
+            <p class="role">Backend Developer</p>
+            <img src="../images/image33.jpg" alt="Student Image">
+            <ul class="skills">
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Firebase</li>
+                <li>Express</li>
+            </ul>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card">
+            <img src="../images/image22.jpg" alt="Student Image">>
+            <h2>Aisha Khan</h2>
+            <p class="role">Mobile App Developer</p>
+
+            <ul class="skills">
+                <li>Flutter</li>
+                <li>Swift</li>
+                <li>Firebase</li>
+                <li>Dart</li>
+            </ul>
+        </div>
+
+    </section>
+
+    <footer>
+        Copyright © 2024 - TechTeam.io
+    </footer>
+
+</body>
+
+</html>

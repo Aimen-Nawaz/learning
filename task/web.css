@@ -1,0 +1,14 @@
+.card{
+    width:320px;
+    background:#a9d6ea;
+    border:2px solid #000;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 8px 20px rgba(145, 195, 233, 0.2);
+
+    /* Add these lines */
+    background-image: url('../images/download.png');
+    background-size: cover;          /* Makes image fit properly */
+    background-position: center;     /* Center the image */
+    background-repeat: no-repeat;    /* Prevent repeating */
+}

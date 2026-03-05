@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        body {
+            background: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .Team-grid {
+            display: flex;
+            gap: 30px;
+        }
+
+        .card {
+            background: rgb(240, 223, 223);
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            width: 250px;
+            background-image: url(../images/bg.jpg);
+            background-size: cover;
+        }
+
+        h1 {
+            position: absolute;
+            top: 30px;
+            color: white;
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+
+        h3 {
+            margin-bottom: 25px;
+            font-style: italic;
+            font-size: x-large;
+        }
+
+        ol {
+            background-color:rgba(255, 127, 80, 0.5);
+            padding: 20px;
+        }
+
+        ol li {
+            color: rgb(247, 247, 248);
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        ul {
+            background: rgba(139, 139, 221, 0.5);
+            padding: 30px;
+        }
+
+        ul li {
+            color: rgb(255, 255, 255);
+            padding: 11px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>List</h1>
+
+    <section class="Team-grid">
+
+        <div class="card">
+            <h2>Daily Priorities</h2>
+            <ol>
+                <li>Complete project report (10 AM)</li>
+                <li>Team meeting Zoom (@2 PM)</li>
+                <li>Respond to email (4 PM)</li>
+                <li>Plan tomorrow task</li>
+                <li>Workout (6 PM)</li>
+            </ol>
+        </div>
+
+        <div class="card">
+            <h3>Grocery Checklist</h3>
+            <ul>
+                <li>Fresh Spinach</li>
+                <li>Whole Grain Bread</li>
+                <li>Olive Oil</li>
+                <li>Almond Milk</li>
+                <li>Chicken Breasts</li>
+            </ul>
+        </div>
+
+    </section>
+
+</body>
+
+</html>

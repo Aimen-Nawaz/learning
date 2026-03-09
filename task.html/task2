@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flexbox and Table Example</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:20px;
+}
+
+/* Flexbox Container */
+.flex-container{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background:#333;
+    padding:20px;
+}
+
+/* Flexbox Items */
+.box{
+    background:white;
+    padding:20px;
+    width:120px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* Table Styling */
+table{
+    width:60%;
+    margin:40px auto;
+    border-collapse:collapse;
+    background:white;
+}
+
+th, td{
+    border:1px solid black;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#333;
+    color:white;
+}
+
+</style>
+</head>
+
+<body>
+
+<h2 style="text-align:center;">Flexbox Example</h2>
+
+<div class="flex-container">
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+</div>
+
+<h2 style="text-align:center;">Student Table</h2>
+
+<table>
+<tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Course</th>
+</tr>
+
+<tr>
+    <td>1</td>
+    <td>Ali</td>
+    <td>Web Development</td>
+</tr>
+
+<tr>
+    <td>2</td>
+    <td>Ayesha</td>
+    <td>Computer Science</td>
+</tr>
+
+<tr>
+    <td>3</td>
+    <td>Ahmed</td>
+    <td>AI</td>
+</tr>
+
+</table>
+
+</body>
+</html>

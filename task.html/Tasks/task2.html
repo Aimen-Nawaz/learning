@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            background: #0e6672;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 60px;
+        }
+
+        header div {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 8px;
+        }
+
+        .business {
+            height: 400px;
+            background-image: url(./gh.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .business-content {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .business h1 {
+            margin-bottom: 10px;
+        }
+
+        .business button {
+            margin-top: 15px;
+            padding: 10px 18px;
+            border: none;
+            background: #ff6b4a;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 40px 60px;
+        }
+
+        .services h2 {
+            color: #1a73e8;
+            margin-bottom: 10px;
+        }
+
+        .about {
+            background: #f2f2f2;
+        }
+
+        .about h2 {
+            color: #2ca24c;
+            margin-bottom: 10px;
+        }
+
+        .contact h2 {
+            color: #e53935;
+            margin-bottom: 10px;
+        }
+        .list{
+            list-style-position: outside;
+            list-style-type: circle;
+            margin-left: 40px;
+             justify-content: space-between;
+
+        }
+
+        footer {
+            background: #0e6672;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h2>Our Business Name</h2>
+
+        <div>
+            <span>Home</span>
+            <span>About</span>
+            <span>Contact</span>
+        </div>
+    </header>
+    <section class="business">
+        <div class="business-content">
+            <h1>Welcome to Our Business</h1>
+            <p>Your one-stop solution for all your needs.</p>
+            <button>Get in Touch</button>
+        </div>
+
+    </section>
+    <section class="services">
+
+        <h2>Our Services</h2>
+        <p>We offer a wide range of services to help your business grow:</p><br>
+
+        <ul class="list">
+            <li>Consulting Services</li><br>
+            <li>Professional Training</li><br>
+            <li>Marketing and Advertising Solutions</li><br>
+        </ul>
+
+    </section>
+
+    <section class="about">
+
+        <h2>About Us</h2>
+
+        <p>
+            We are a dedicated team with over 10 years of experience in business development
+            and management. Our mission is to provide high-quality services tailored to each
+            client's unique needs.
+        </p>
+
+    </section>
+    <section class="contact">
+
+        <h2>Contact Us</h2>
+        <p>Phone: (123) 456-7890</p><br>
+        <p>Email: contact@ourbusiness.com</p>
+
+    </section>
+    <footer>
+        © 2023 Small Business. All rights reserved.
+    </footer>
+</body>
+
+</html>

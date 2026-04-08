@@ -1,3 +1,4 @@
+//task 1
 const cartItems = [
     { name: " moblie", price: 15000, quantity: 2 },
     { name: " bag", price: 500, quantity: 1 },
@@ -39,8 +40,8 @@ const findByName = (category) => {
 }
 //console.log("Find by name", findByName("pizza"));
 const findByPrice=(price)=>{
-    return menu.filter(item=>{//EVERY ITEM IN ARRAY GIVE 
+    return menu.filter(item=>{
         return  item.price<500
     })
 }
-console.log("findByPrice",findByPrice(500) )
+console.log("Task 1:Find by name", findByName("pizza") ,"\n findByPrice",findByPrice(500), "\n Task 2", cartItems,"\n newarr", updatedCart,"\n",total)

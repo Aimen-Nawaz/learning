@@ -6,11 +6,11 @@ const orders = [
 ];
 
 
-orders.forEach(order => {
+orders.forEach((order) => {
   console.log(`Task 1, Order ${order.id}: ${order.customer} - Rs.${order.total}`);
-  
-  order.processed = true; 
-  
+
+  order.processed = true;
+
   if (order.total > 1000) {
     console.log(order);
   }
@@ -26,7 +26,7 @@ const formattedUsers = users.map(user => ({
   isActive: user.active
 }));
 
-console.log("\n Task2",formattedUsers);
+console.log("\n Task2", formattedUsers);
 
 const names = users.map(user => user.firstName + " " + user.lastName);
 console.log(names);
@@ -37,7 +37,7 @@ const products = [
 ];
 
 const allTags = products.flatMap(p => p.tags);
-console.log("\n Task 3" ,allTags);
+console.log("\n Task 3", allTags);
 const uniqueTags = [...new Set(allTags)];
 console.log(uniqueTags);
 //task 4
@@ -50,7 +50,7 @@ const expenses = [
 ];
 
 const total = expenses.reduce((sum, item) => sum + item.amount, 0);
-console.log("\n Task 5","Total:", total);
+console.log("\n Task 5", "Total:", total);
 const highest = expenses.reduce((max, item) => {
   return item.amount > max.amount ? item : max;
 });
@@ -72,34 +72,34 @@ const messages = [
 const reversedText = messages.reduceRight((sum, msg) => sum + " " + msg);
 console.log("\n task 6 ", reversedText);
 
-const lastMessage = messages.reduceRight((_, msg) => msg);
+const lastMessage = messages.reduceRight((prev, msg, i, arr) => arr.indexOf(prev) > i ? prev : msg);
 console.log("Last:", lastMessage);
 //task 7
 
-const passwords = ["abc12345", "pass@123", "secure99"];
+const passwords = ["abc12", "pass@123", "secure99"];
 const validLength = passwords.every(p => p.length > 6);
-console.log("\n task 7","All length > 6:", validLength);
+console.log("\n task 7", "All length > 6:", validLength);
 const hasNumber = passwords.every(p => /\d/.test(p));
 console.log("All contain number:", hasNumber);
 //task 8
 const roles = ["user", "editor", "admin"];
 const isAdmin = roles.some(r => r === "admin");
-console.log("\n task 8","Is Admin:", isAdmin);
+console.log("\n task 8", "Is Admin:", isAdmin);
 const hasModerator = roles.some(r => r === "moderator");
 console.log("Has Moderator:", hasModerator);
 //task 10
 const str = "Hello";
-let arr= Array.form (str);
-console.log("\n task 9",arr);
+let arr = Array.from(str);
+console.log("\n task 9", arr);
 const nums = Array.from({ length: 10 }, (_, i) => i + 1);
 console.log(nums);
-const randomNums = Array.from({ length: 5 }, () => Math.floor(Math.random() * 100));
+const randomNums = Array.from({ length: 5 }, () => Math.floor(Math.random() * 10));
 console.log(randomNums);
 // task 11
 const items = ["apple", "banana", "mango"];
 
 for (let index of items.keys()) {
-  console.log("\n Task 11",index);
+  console.log("\n Task 11", index);
 }
 
 items.forEach((item, index) => {
@@ -110,7 +110,7 @@ items.forEach((item, index) => {
 const colors = ["red", "green", "blue"];
 
 for (const [index, value] of colors.entries()) {
-    console.log("\n Task 12",index + " - " + value);
+  console.log("\n Task 12", index + " - " + value);
 }
 //task 13
 const cart1 = ["item1", "item2"];
@@ -121,7 +121,7 @@ const mergedCart = [...cart1, ...cart2];
 const clonedCart = [...cart1];
 const updatedCart = [...cart1, "item5"];
 
-console.log("\n tassk 13","Merged Cart:", mergedCart);
+console.log("\n tassk 13", "Merged Cart:", mergedCart);
 console.log("Cloned Cart:", clonedCart);
 console.log("Updated Cart:", updatedCart);
 console.log("Original Cart1:", cart1); 

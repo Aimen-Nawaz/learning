@@ -6,9 +6,7 @@ console.log(trimedUser.toUpperCase());
 console.log(trimedUser.toLowerCase())
 //task2
 const email = "jaffer@gmail.com";
-
 const isValid = email.includes("@") && email.toLowerCase().endsWith("gmail.com");
-
 if (isValid) {
     console.log("task2\n", "Email valid:", email);
 } else {
@@ -67,6 +65,7 @@ console.log("Largest word is", largeWord)
 //task 9
 const number = "3456789";
 const formatted = `+92${number.padStart(10, '0')}`;
+console.log("formatted", formatted)
 const masked = formatted.slice(0, 5) + '***' + formatted.slice(-2);
 console.log("task 9\n",masked); 
 //task 10
@@ -86,8 +85,7 @@ const comment = "This product is stupid";
 const hasBadWord = comment.includes("stupid");
 const cleanComment = comment.replace("stupid", "***");
 const isInappropriate = hasBadWord;
-
-console.log("task 12 \n","Bad Word Found:", hasBadWord);
+console.log("task 11 \n","Bad Word Found:", hasBadWord);
 console.log("Clean Comment:", cleanComment);
 console.log("Inappropriate:", isInappropriate);
 // task 12
@@ -117,28 +115,32 @@ const sentence = "javaScript is fun";
 const lower = sentence.toLowerCase();
 console.log("Lowercase:", lower);
 const upper = sentence.toUpperCase();
-console.log("Uppercase:", upper);
-const capitalized =sentence.toLowerCase().charAt(0).toUpperCase() + sentence.toLowerCase().slice(1);
-console.log("Capitalized:", capitalized);
+console.log("Uppercase:",upper )
+
+const capitalized = sentence
+  .split(" ") 
+  .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
+  .join(" ")
+  console.log("Capitalized",capitalized)
+
 //task
 const blog = "   Learn JavaScript FAST with stupid projects !";
 const trimblog = blog.trim();
-const newblog = blog.trim()
+const urlSlug = blog.trim()
     .toLowerCase()
     .replace(/[^\w\s]/g, " ")
     .replaceAll(" ", "-");
-console.log(trimblog);
-console.log(newblog);
+console.log("\n Mini Project\n","trimblog");
+console.log(urlSlug);
 
-;
-const wordCount = blog.split(/\s+/).length;
+const wordCount = trimblog.split(" ").length;
 
 const stopWords = ["with", "the", "a", "an", "is", "to", "and", "for"];
 
-const keywords = blog
+const keywords = trimblog
     .toLowerCase()
     .replace(/[^\w\s]/g, "")
-    .split(/\s+/)
+    .split(" ")
     .filter(word => !stopWords.includes(word));
 
 const badWords = ["stupid", "bad"];
@@ -156,6 +158,24 @@ const maskedd = blog
 console.log("Word Count:", wordCount);
 console.log("Keywords:", keywords);
 console.log(maskedd);
+//task
+const items = ["Apple", "Banana", "Cherry", "Date"];
+
+const searchTerm = "aPpLe"; 
+const results = items.filter(item => 
+  item.toLowerCase().includes(searchTerm.toLowerCase())
+);
+console.log("\ntask ",results)
+//TASK
+const passwordd = "MySecurePassword!";
+const isLong = passwordd.length >= 8;
+const hasSymbol = passwordd.includes("!");
+if (isLong && hasSymbol) {
+  console.log("last task\n","Valid Password");
+} else {
+  console.log(" Must be 8+ chars and include '!'");
+}
+
 
 
 

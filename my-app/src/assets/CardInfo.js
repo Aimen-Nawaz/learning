@@ -1,26 +1,27 @@
-import { FaFacebook, FaInstagram, FaWhatsapp, FaTwitter } from "react-icons/fa";
-const cardsInfo = [
+import img1 from "../images/image2.jpg";
+import img2 from "../images/sunset-forest-walk-stockcake.webp";
+import img3 from "../images/images11.jpg";
+
+export const cardsInfo = [
   {
     id: 1,
-    img: "../images/image2.jpg",
+    img: img1,
     title: "Heading Here",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-     icon: <FaFacebook />
-    
+    text: "Lorem ipsum dolor sit amet...",
+    icon: <FaFacebook />
   },
   {
     id: 2,
-    img: "../images/sunset-forest-walk-stockcake.webp",
+    img: img2,
     title: "Heading Here",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
-     icon: <FaInstagram />
+    text: "Lorem ipsum dolor sit amet...",
+    icon: <FaInstagram />
   },
   {
     id: 3,
-    img: "../images/images11.jpg",
+    img: img3,
     title: "Heading Here",
-    text: "Lorem ipsum dolor sit amet consectetur adipisicing elit...",
+    text: "Lorem ipsum dolor sit amet...",
     icons: [<FaWhatsapp />, <FaTwitter />]
-    
   }
 ];

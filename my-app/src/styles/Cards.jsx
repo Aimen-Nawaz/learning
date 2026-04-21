@@ -1,7 +1,5 @@
 import "./Card.css";
 import { FaFacebook, FaInstagram, FaWhatsapp, FaTwitter } from "react-icons/fa";
-import { cardsData } from "./assets/CardsInfo";   
-
 export default function App() {
   return (
     <div className="flex">

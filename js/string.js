@@ -24,11 +24,15 @@ console.log("Password Valid:", valid);
 //task 4
 const products = ["Laptop", "Phone", "Tablet", "Smart Watch"];
 const search = "phone";
-const index = products.findIndex(product =>
-    product.toLowerCase() === search.toLowerCase()
-);
+const regex = new RegExp(search, "gi")
+console.log("regex", regex)
+const index= products.indexOf(regex)
+console.log("check include",index)
+// const index = products.findIndex(product =>
+//     product.toLowerCase() === search.toLowerCase()
+// );
 if (index !== -1) {
-    console.log("task4\n", `Product "${products[index]}" found at index: ${index}`);
+    console.log("task4\n", `Product "${search}" found at index: ${index}`);
 } else {
     console.log("Product not found.".includes("not") ? "No results found." : "");
 }
@@ -64,7 +68,8 @@ console.log("words array", words)
 console.log("Largest word is", largeWord)
 //task 9
 const number = "3456789";
-const formatted = `+92${number.padStart(10, '0')}`;
+const formatted = `+92${number.padEnd(10, '0')}`;
+console.log("formated ", formatted)
 console.log("formatted", formatted)
 const masked = formatted.slice(0, 5) + '***' + formatted.slice(-2);
 console.log("task 9\n",masked); 
@@ -75,17 +80,18 @@ const extension = fileName.includes(".") ? fileName.slice(fileName.lastIndexOf("
 
 const isPDF = fileName.endsWith(".pdf");
 
-const isValidd = fileName.includes(".");
+const isValidd = fileName.includes(".pdf");
 
 console.log("task 10 \n","Extension:", extension);
 console.log("Is PDF:", isPDF);
-console.log("Valid File:", isValidd);
+console.log(isValid?"Valid File:": "This file type is not allowed.");
 // task 11
 const comment = "This product is stupid";
 const hasBadWord = comment.includes("stupid");
 const cleanComment = comment.replace("stupid", "***");
 const isInappropriate = hasBadWord;
-console.log("task 11 \n","Bad Word Found:", hasBadWord);
+
+console.log("task 12 \n","Bad Word Found:", hasBadWord);
 console.log("Clean Comment:", cleanComment);
 console.log("Inappropriate:", isInappropriate);
 // task 12
@@ -101,7 +107,7 @@ const text = "Order #123 placed, Order #456 shipped";
 const orders = text.match(/\d+/g);
 const totalOrders = orders ? orders.length : 0;
 const numbers = [...text.matchAll(/\d+/g)].map(item => Number(item[0]));
-console.log("Orders :", orders);
+console.log("task 13 \n Orders :", orders);
 console.log("Total Orders:", totalOrders);
 console.log("Orders (numbers):", numbers);
 //task 14
@@ -115,14 +121,9 @@ const sentence = "javaScript is fun";
 const lower = sentence.toLowerCase();
 console.log("Lowercase:", lower);
 const upper = sentence.toUpperCase();
-console.log("Uppercase:",upper )
-
-const capitalized = sentence
-  .split(" ") 
-  .map(word => word.charAt(0).toUpperCase() + word.slice(1)) 
-  .join(" ")
-  console.log("Capitalized",capitalized)
-
+console.log("Uppercase:", upper);
+const capitalized =sentence.split(" ").map(w=>w.charAt(0).toUpperCase() + w.toLowerCase().slice(1)).join(" ");
+console.log("Capitalized:", capitalized);
 //task
 const blog = "   Learn JavaScript FAST with stupid projects !";
 const trimblog = blog.trim();

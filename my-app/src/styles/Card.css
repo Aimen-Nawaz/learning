@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card {
+  border: 2px solid rgb(88, 67, 67);
+  margin: 30px auto;
+  padding: 10px 8px;
+  border-radius: 25px;
+  background-color: rgb(202, 167, 229);
+  height: 300px;
+  width: 200px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card h1 {
+  font-family: "Roboto Mono";
+  font-size: large;
+  font-style: italic;
+  color: brown;
+  padding-bottom: 10px;
+}

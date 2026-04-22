@@ -2,7 +2,7 @@ import { FaBriefcase } from "react-icons/fa";
 
 function BusinessCardFront({ card }) {
   return (
-    <div className="card">
+    <div className="BusinessCard">
       <div className="top-blue"></div>
       <div className="top-blue-right"></div>
 

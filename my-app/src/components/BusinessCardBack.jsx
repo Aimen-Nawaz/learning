@@ -3,7 +3,7 @@ import { MdPerson } from "react-icons/md";
 
 function BusinessCardBack({ card }) {
   return (
-    <div className="card">
+    <div className="BusinessCard">
 
 
       <MdPerson className="avatar-icon" />

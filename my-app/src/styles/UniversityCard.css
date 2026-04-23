@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.uniCardWrapper {
+  width: 320px;
+  background: #a9d6ea;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 50px auto;
+  box-shadow: 0 8px 20px rgba(145, 195, 233, 0.2);
+}
+
+.uniTitle {
+  text-align: center;
+  font-size: 30px;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.uniImage {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid #86b2e8;
+  display: block;
+  margin: 0 auto 15px auto;
+}
+
+.uniName {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.uniRow {
+  display: flex;
+  margin: 8px 0;
+  font-size: 14px;
+  padding-bottom: 10px;
+}
+
+.uniRow span {
+  width: 110px;
+  font-weight: bold;
+}
+
+.uniIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  font-size: 18px;
+}

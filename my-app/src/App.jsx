@@ -6,6 +6,9 @@ import BusinessCardFront from "./components/BusinessCardFront";
 import BusinessCardBack from "./components/BusinessCardBack";
 import CardList from "./components/CardList";
 
+import Dashboard from "./components/Dashboard";
+import UniversityCard from "./components/UniversityCard";
+
 function App() {
   return (
     <>
@@ -15,6 +18,12 @@ function App() {
       </div>
 
       <CardList />
+       <Dashboard />
+          
+      <UniversityCard />
+    
+
+      
     </>
   );
 }

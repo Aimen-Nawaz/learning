@@ -1,0 +1,5 @@
+{
+    "js/ts.suggest.enabled": true,
+    "js/ts.suggest.jsdoc.enabled": true,
+    "js/ts.suggest.completeFunctionCalls": true
+}

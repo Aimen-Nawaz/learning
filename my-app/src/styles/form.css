@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.loginForm-box {
+  width: 320px;
+  padding: 25px;
+  border-radius: 12px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+
+.loginForm-inputBox {
+  position: relative;
+  margin: 12px 0;
+}
+
+.loginForm-inputBox input {
+  width: 100%;
+  padding: 10px 35px 10px 10px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background: #f5f5f5;
+}
+
+.loginForm-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: gray;
+}
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 15px 0;
+  color: gray;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.divider span {
+  padding: 0 10px;
+}
+
+
+.loginForm-btns {
+  display: flex;
+  flex-direction: column;  
+  gap: 10px;
+}
+
+.loginForm-btns button {
+  width: 100%;   
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.loginForm-btns button[type="submit"] {
+  background: blue;
+  color: white;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.loginForm-box p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.social-login {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  color: black;
+  display: block;
+  justify-content: flex-start;
+  align-items:center;
+}
+
+.facebook-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  background: #1877f2;
+  color: white;
+  margin-bottom: 20px;
+}
+.google-btn:hover,
+.facebook-btn:hover {
+  opacity: 0.85;
+}

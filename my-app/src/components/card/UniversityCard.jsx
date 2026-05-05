@@ -1,6 +1,6 @@
-import "../styles/universityCard.css";
-import { uniCardInfo } from "../assets/uniCardInfo";
-import studentImg from "../images/image22.jpg";
+import "../../styles/universityCard.css";
+import { uniCardInfo } from "../../assets/uniCardInfo";
+import studentImg from "../../images/image22.jpg";
 
 function UniversityCard() {
   return (

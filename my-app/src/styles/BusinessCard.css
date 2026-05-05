@@ -1,10 +1,12 @@
-.container {
+.containerB {
     background: #cfcfcf;
     display: flex;
     gap: 100px;
     padding: 40px;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 100%;
 }
 .box {
     flex: 1;

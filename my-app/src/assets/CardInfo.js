@@ -2,6 +2,7 @@ import img1 from "../images/image2.jpg";
 import img2 from "../images/sunset-forest-walk-stockcake.webp";
 import img3 from "../images/images11.jpg";
 export const CardInfo = [
+ 
   {
     id: 1,
     img: img1,

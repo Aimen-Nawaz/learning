@@ -1,0 +1,192 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* PAGE BACKGROUND */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+/* MAIN CARD */
+.party-form {
+  border-radius: 20px;
+    background: linear-gradient(135deg, hsl(350, 9%, 74%), #413f3f);
+max-width: auto;
+max-width: 500px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 30px rgba(86, 77, 77, 0.3);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+/* TOP IMAGE */
+.party-form::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: url("https://images.unsplash.com/photo-1506157786151-b8491531f063")
+    center/cover no-repeat;
+  z-index: 0;
+}
+
+/* DARK OVERLAY */
+.party-form::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  background: rgba(237, 231, 231, 0.5);
+  z-index: 1;
+}
+
+/* CONTENT ABOVE IMAGE */
+.party-form > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* HEADER TEXT */
+.party-form h1 {
+  text-align: center;
+  margin-top: 140px;
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: black;
+}
+
+.party-form h3 {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 10px;
+}
+
+/* EVENT DETAILS */
+.party-form h2 {
+  font-size: 16px;
+  margin: 6px 0;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* HIGHLIGHT TIME */
+.party-form h2:nth-of-type(2) {
+  color: #ffe066;
+  font-weight: bold;
+}
+
+/* FORM */
+.party-form form {
+  margin-top: 20px;
+  padding: 25px;
+  text-align: left;
+}
+
+/* INPUT GROUP */
+.party-form form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* NAME ROW */
+.name-row {
+  display: flex;
+  gap: 10px;
+}
+
+.name-row div {
+  flex: 1;
+}
+
+/* INPUTS */
+.party-form input[type="text"],
+.party-form input[type="email"],
+.party-form select {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  background: rgba(255,255,255,0.3);
+  color: white;
+  font-size: 14px;
+}
+
+/* PLACEHOLDER */
+.party-form input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+.party-form h2{
+  align-items: self-start;
+}
+/* SMALL TEXT */
+.party-form small {
+  font-size: 11px;
+  opacity: 0.8;
+  margin-top: 3px;
+}
+
+/* RADIO GROUP */
+.radio-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.party-form input[type="radio"] {
+  margin-right: 5px;
+}
+
+.party-form label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* CHECKBOX */
+.party-form input[type="checkbox"] {
+  accent-color: #ff6a88;
+  margin-right: 8px;
+}
+
+/* MULTI SELECT */
+.party-form select[multiple] {
+  height: 100px;
+}
+
+.party-form select option {
+  color: black;
+}
+
+/* BUTTON */
+.party-form button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #ff6a88, #ff99ac);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+.party-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff4e75, #ff7f9c);
+}

@@ -5,7 +5,7 @@ export const cards = [
     title: "Total Students",
     value: 450,
     icon: "fa-users",
-    className: "card"
+    className: "card0"
   },
   {
     title: "New Students",
